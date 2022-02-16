@@ -15,7 +15,6 @@
           <div>Tipo: {{ $comic->type }}</div>
           <div>Prezzo: {{ $comic->price }}</div>
           <div>Saldi: {{ $comic->sale_date }}</div>
-    
           <p class="card-text">{{ $comic->description }}</p>
         </div>
     </div>
