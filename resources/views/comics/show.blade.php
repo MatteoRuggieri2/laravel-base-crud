@@ -6,6 +6,6 @@
 
 @section('main_content')
     
-    <h1>titolo singolo fumetto</h1>
+    <h1>{{ $comic->title }}</h1>
 
 @endsection
