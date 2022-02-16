@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
+
+    <header>
+        <a href="{{ route('comics.index') }}">Torna alla lista dei fumetti</a>
+    </header>
     
     <main>
         @yield('main_content')
