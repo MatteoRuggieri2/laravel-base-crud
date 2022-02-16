@@ -12,6 +12,7 @@
 
     <header>
         <a href="{{ route('comics.index') }}">Torna alla lista dei fumetti</a>
+        <a href="{{ route('comics.create') }}">Crea un nuovo fumetto</a>
     </header>
     
     <main>
