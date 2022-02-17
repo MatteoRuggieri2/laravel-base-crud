@@ -131,10 +131,10 @@ class ComicController extends Controller
     public function dataValidation()
     {
         return [
-            'title' => 'required|unique:title|max:45',
+            'title' => 'required|max:45',
             'description' => 'required|max:60000',
             'thumb' => 'required|max:195',
-            'price' => 'required',
+            'price' => 'required|numeric',
             'series' => 'required|max:45',
             'sale_date' => 'required|date_format:Y-m-d',
             'type' => 'required|max:45'
