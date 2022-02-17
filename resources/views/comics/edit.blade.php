@@ -48,6 +48,7 @@
             <div class="mb-3">
                 <label for="thumb">Url Immagine</label>
                 <input type="text" class="form-control" name="thumb" id="thumb" placeholder="Url" value="{{ $comic->thumb }}">
+                <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
             </div>
 
             {{-- Description --}}
@@ -60,6 +61,10 @@
             <button type="submit" class="btn btn-primary">Conferma Modifica</button>
             
         </form>
+
+        {{-- Delete Changes Button --}}
+        <a class="btn btn-danger" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Annulla Modifiche</a>
+
     </div>
 
 @endsection
