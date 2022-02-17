@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="{{ route('comics.index') }}">Torna alla lista dei fumetti</a>
-                    <a class="nav-item nav-link active" href="{{ route('comics.create') }}">Crea un nuovo fumetto</a>
+                    <a class="nav-item nav-link btn btn-outline-primary" href="{{ route('comics.create') }}">Crea un nuovo fumetto</a>
                 </div>
             </div>
         </nav>

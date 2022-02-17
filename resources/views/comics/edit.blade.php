@@ -58,7 +58,10 @@
             <div class="mb-3">
                 <label for="thumb">Url Immagine</label>
                 <input type="text" class="form-control" name="thumb" id="thumb" placeholder="Url" value="{{ old('thumb') ? old('thumb') : $comic->thumb }}">
-                <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+                <div class="previous-image">
+                    <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+                    <span>&#9754; IMMAGINE PRECEDENTE</span>
+                </div>
             </div>
 
             {{-- Description --}}
@@ -68,13 +71,13 @@
             </div>
 
             {{-- Submit --}}
-            <button type="submit" class="btn btn-primary">Conferma Modifica</button>
+            <button type="submit" class="btn btn-primary">Conferma Modifiche</button>
+
+            {{-- Delete Changes Button --}}
+            <a class="btn btn-danger" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Annulla Modifiche</a>
+
             
         </form>
-
-        {{-- Delete Changes Button --}}
-        <a class="btn btn-danger" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Annulla Modifiche</a>
-
     </div>
 
 @endsection

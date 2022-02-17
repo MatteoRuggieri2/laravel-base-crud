@@ -19,14 +19,15 @@
         </div>
     </div>
 
-    {{-- Edit Button --}}
-    <a class="btn btn-primary" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
-
-    {{-- Delete Button --}}
+    {{-- Button --}}
     <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="post">
         @csrf
         @method('DELETE')
+
+        {{-- Edit Button --}}
+        <a class="btn btn-primary" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
         
+        {{-- Delete Button --}}
         <button class="btn btn-danger" onclick="return confirm('Sei sicuro di voler eliminare questo fumetto?')">Elimina</button>
     </form>
 </div>

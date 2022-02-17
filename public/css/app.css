@@ -12178,3 +12178,13 @@ img {
   padding: 20px;
 }
 
+.previous-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.previous-image img {
+  padding: 20px 20px 20px 0;
+}
+
